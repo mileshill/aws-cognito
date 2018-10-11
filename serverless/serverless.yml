@@ -22,6 +22,18 @@ resources:
       Type: AWS::Cognito::UserPool
       Properties:
         UserPoolName: cognito_sls_backend_user_pool
+        AliasAttribtues:
+          - email
+        AutoVerifiedAttributes:
+          - email
+        Schema:
+          - Name: email
+            AttributeDataType: String
+            Required: true
+          - Name: password
+            AttributeDataType: String
+            Required: true
+
     # Cognito - Client
     CognitoUserPoolClient:
       Type: AWS::Cognito::UserPoolClient
