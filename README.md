@@ -1,5 +1,5 @@
-# aws-cognito
-AWS Cognito Login
+# AWS Cognito Login-Signup-Call Authorized WebApiGateway
+
 Basic implementation utilizing AWS Cloudformation to build the infrastructure required to construct
  1. Web Api Gateway linked to Lambda
  2. Lambda returning "hello from authorized user" message
@@ -21,8 +21,11 @@ Ensure config and credentials have been created
 ```
 
 
-## Move into `serverless` directory
-`sls deploy`
+## Infrastructure
+`$ cd serverless && sls deploy`
+Once infrastructure has been deployed, everything in `cognito-ui/config.js` will require updating
+except `REGION`.
 
-## Move into project directory
-`yarn start` or `npm run`
+
+## UI
+`yarn start` or `npm install && npm run`
