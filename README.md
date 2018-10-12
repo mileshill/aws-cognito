@@ -17,7 +17,8 @@ Ensure config and credentials have been created
 
 ```shell
 /home/$USER/.aws/config
-/home/$USER/.aws/credentials```
+/home/$USER/.aws/credentials
+```
 
 
 ## Move into `serverless` directory
